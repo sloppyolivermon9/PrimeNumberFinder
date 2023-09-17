@@ -1,4 +1,3 @@
-from time import sleep
 import os
 
 cwd = os.getcwd()
@@ -22,7 +21,6 @@ with open(files + "\CurrentNumber.txt", "r") as f:
 
 while True:
     FindPrime(int(CurrentNum))
-    sleep(0.1)
     CurrentNum += 1
 
     with open(files + "\CurrentNumber.txt", "w") as f:
